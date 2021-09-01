@@ -1,0 +1,495 @@
+body{
+    background-color: #2f4353;
+    background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+    overflow-y: auto;
+}
+
+
+.choiseVersion img{
+    width: 90%;
+}
+
+.custom-color-select{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.custom-color-select img{
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+.custom-color-select img:hover{
+   
+    transform: scale(1.05);
+    width: 100%;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+
+.car-name{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+.next-step{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.carrousel-select{
+    margin-bottom: 30px;
+
+}
+
+
+/* NAVBAR */
+nav{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    z-index: 1000;
+    margin-top: 0;
+    }
+    
+    nav ul li a{
+        color: white;
+        z-index: 2000;
+        position: relative;
+    }
+    #logo{
+        position: absolute;
+        z-index: 1000;
+     
+    }
+    #mobile-nav{
+        z-index: 3000;
+    }
+    @media (min-width: 991px) {
+        #logo{
+            width: 20%; 
+            margin: 0 40%; 
+        }
+        .itemDriving{
+        height: 250px;
+    }
+     }
+    
+    /* HOME */
+    
+    .presentation{
+        position: relative;
+        margin-top: 2%;
+    }
+    .presentation img{
+        width: 100%;
+    }
+    /* MENU */
+
+    #toggleMenu {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+    .menu-button{
+
+        background-color: rgba(0, 0, 0, 0.501);
+        color: white;
+        font-size: 20px;
+        position: fixed;
+        border-radius: 15px;
+        padding: 10px;
+
+      
+    }
+
+    .menu-button:focus{
+        background-color: rgba(0, 0, 0, 0.871);
+        
+    }
+    .menu-button:hover{
+        transform: scale(1.1);     
+        transition: 300ms;   
+    }
+      
+    .menu{
+        position: fixed;
+        z-index: 1000;
+    }
+    .linkMenu{
+        background-color: rgb(0, 0, 0, 0.8);
+        color: white;
+        padding: 10%;
+        text-align: left;
+        height: 100%;
+        font-size: 12px;
+    
+    }
+    
+    .globalPrice{
+        background-color: royalblue;        
+    }
+
+    .globalPrice:hover{
+        background-color: royalblue; 
+        transform: scale(1.9) !important;
+        padding-right: 50px;
+        transition: 9000ms !important;   
+        right: 20% !important;    
+    }
+
+    .linkMenu a{
+        color: aliceblue;
+    }
+
+    .linkMenu:hover{
+        transform: scale(1.03);
+        transition: 200ms;
+        background-color: rgba(0, 0, 0, 0.652);
+
+    }
+
+    .linkMenu-disable{
+        background-color: rgb(0, 0, 0, 0.8);
+        color: white;
+        padding: 10%;
+        text-align: left;
+   
+    }
+
+    .linkMenu-disable a{
+        pointer-events: none;
+        color: rgb(223, 40, 40);
+    }
+
+
+    @media (max-width: 890px) {
+        .menu{
+            top:10%;
+            left: 60%;
+        }
+        .linkMenu{
+            width: 200px;
+        
+        }
+
+        .menu-button{
+
+            top: 10%;
+            left: 80%;
+        }
+     }
+    @media (min-width: 891px) {
+        .menu{
+            top:10%;
+            left: 85%;
+        }
+        .linkMenu{
+            width: 200px;
+        }
+
+        .menu-button{
+            
+            top: 12%;
+            left: 90%;
+        }
+     }
+
+     /* VERSIONS */
+
+    .choiseVersion{
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around; 
+        margin-top: -38%;
+        left: 0;
+        right: 0;
+    }
+
+    .deleteButton{
+        margin-top: -15%; 
+    }
+
+    #menuSelected {
+        background-color: royalblue;
+    }
+    /* DRIVING */
+
+    .equipmentName{
+        font-weight: bold;
+    }
+    .itemDriving img{
+        width: 100%;
+    }
+
+    /* SELECTED */
+
+    .selected{
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        padding-bottom: 1% !important;
+    }
+    .optSelected{
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: white;
+        margin-bottom: 2%;
+        border-bottom: 1px solid white;
+        padding: 1%;
+    }
+/* anthony */
+
+.custom-color-select{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.custom-color-select img{
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+.custom-color-select img:hover{
+    cursor: pointer;
+}
+
+.select-car-please{
+   text-align: center;
+}
+
+.car-name{
+  text-align: center;
+
+}
+.next-step{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 2%;
+    padding-right: 30px;
+}
+
+/* .carrousel-select{
+    margin-bottom: 30px;
+} */
+
+/* COLOR */
+
+.color-carousel{
+    width: 60%;
+    margin: 0 auto;
+}
+.color-carousel img{
+    width: 100%;
+}
+/* RIMS */
+
+.custom-rims-select img{
+    width: 80%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: black 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+.rims-carousel{
+    width: 50%;
+    margin: 0 auto;
+}
+.containerButton{
+    margin-top: 2%;
+    margin: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/*SEALING*/
+
+.sealing-carousel{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sealing-carousel img{
+    width: 100%;
+}
+
+/* INNCUSTON */
+.inncustom-carousel{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+.inncustom-carousel img{
+    width: 100%;
+    height: 500px;
+}
+
+/**CUSTOM ***/
+
+    .configurator{
+        z-index: 1;
+    }
+
+    .configurator .presentation-version{
+        position: relative;
+        color: blanchedalmond;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -20%;
+        padding-top: 10%;
+        z-index: 2;
+        font-family: 'Hall Fetica Narrow Italic', sans-serif;
+        font-size: 60px;
+        }
+
+        .start-config-button{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-top: -10%;
+            z-index: 4;
+        }
+
+        .start-config-button button{
+            
+            z-index: 4;
+           
+            background-color: blanchedalmond;
+            color: black;
+            font-family: 'Hall Fetica Narrow Italic', sans-serif;
+            font-size: 24px;
+
+        }
+
+        .start-config-button button:hover{
+           background-color: rgb(49, 49, 49);
+           color: blanchedalmond;
+           transition: 300ms;
+           transform : scale(1.05);
+        }
+        .presentation-info{
+
+        font-family: 'Hall Fetica Narrow Italic', sans-serif;
+        padding-left: 40px;
+        margin-top: 20px;
+
+        }
+        .margin-config{
+            margin-top: 10%;
+        }
+        .border-clean{
+            border-top: grey 1px solid;
+            width: 50%;
+            margin-bottom: 40px;
+
+        }
+        .picture-technique{
+            width: 100%;
+            padding: 20px;
+        }
+
+        .picture-technique-perf{
+            width: 100%;
+        }
+
+        /****** ROUTER EQUIPEMENT *****/
+
+        .router-equipement{
+
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .router-item{
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.385);
+            padding: 1%;
+
+        }
+
+        #pannelSelected{
+            background-color: rgba(65, 105, 225, 0.679);
+            transform: scale(1.2);
+        }
+
+        .router-item:hover{
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.748);
+            transform: scale(1.2);
+            transition: 300ms;
+
+        }
+
+        .router-item i{
+            font-size: 24px;
+            color:white;
+            
+        }
+
+        /***** Modal *******/
+    .modalTest{
+        min-height: 85%;
+        width: 80%;
+    }
+    .prixSummary{
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 1% 5%;
+        text-align: center;
+    }
+    .resetSummary{
+        margin: 0 auto;
+        padding-top: 3%;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .categorie{
+        font-weight: 500;
+        font-size: 18px;
+        font-style: italic;
+    }
+    .descriptifSummary{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .imgCategories img{
+        width: 100%;
+    }
+    .descriptifItem{
+        display: flex;
+        align-items: center;
+        text-align: end;
+    }
+
+    .viewModal img{
+        width: 100%;
+    }
